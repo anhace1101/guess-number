@@ -49,13 +49,17 @@ var checkNumberFunction = () => {
     console.log(scoreArray);
     messageElement.textContent = "correct number ";
     playBoxElement.style.backgroundColor = "#60b347";
-    highScoreElement.textContent = "high score: " + highScore;
     //find max
     highScore = Math.max(...scoreArray);
+    highScoreElement.textContent = "high score: " + highScore;
+    checkButtonElement.style.display ="none"
   }
 };
 
 againButtonElement.onclick = () => {
+  //display check Button
+  checkButtonElement.removeAttribute("style");
+
   //set score 20
   score = 20;
   scoreCounting.textContent = "score: " + score;
