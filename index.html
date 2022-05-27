@@ -10,15 +10,38 @@
     <div class="play-box">
       <h2>Guess my number</h2>
       <input type="number" name="" id="input-field" />
-      <button type="submit" id="check-btn">check</button>
-      <button type="submit" id="again-btn">again</button>
+      <button type="submit" id="check-btn" class="btn">check</button>
+      <button type="submit" id="again-btn" class="btn">again</button>
       <h3 class="message">start guessing...</h3>
       <h3 class="score">score: 20</h3>
       <h3 class="high-score">high score: 0</h3>
     </div>
     <style>
       .play-box {
-        width: 200px;
+        width: 100%;
+      }
+      h2 {
+        text-align: center;
+      }
+      #input-field {
+        width: 80px;
+        font-size: 20px;
+        margin: 20px 100px;
+        margin-right: 20px;
+        height: 40px;
+      }
+      .btn {
+        font-size: 15px;
+        text-decoration: none;
+        background-color: #000;
+        color: #fff;
+        padding: 11px 16px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      h3 {
+        text-align: center;
       }
     </style>
     <script src="./main.js"></script>
